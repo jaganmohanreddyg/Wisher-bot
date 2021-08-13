@@ -23,7 +23,6 @@ chromedriver-py==91.0.4472.19
 cli-exit-tools==1.1.8
 click==7.1.2
 clipboard==0.0.4
-ClointFusion==0.1.22
 colorama==0.4.4
 commonmark==0.9.1
 comtypes==1.1.9
