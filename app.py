@@ -101,6 +101,8 @@ def gif_maker():
     t5.join()
 
 if __name__ == '__main__':
+    import argparse
+    from pywebio.platform.tornado_http import start_server
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--port", type=int, default=8080)
     args = parser.parse_args()
