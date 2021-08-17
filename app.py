@@ -52,6 +52,8 @@ def main():
 
     "theme5" : {"name" : "theme5.gif", "pic" : (686,280), "disney.ttf": [(30,550),96],"dotted.ttf": [(30,650),43],"netflix.ttf": [(50,600),88],"agethsa.ttf": [(30,600),86],"younglines.ttf": [(10,600),135],"regular.ttf": [(10,600),64],"dreamscape.ttf": [(80,650),50] ,"rainwood.ttf": [(100,530),100],"rocking.ttf": [(30,650),65] },
     }
+    put_image("info['event']+'/theme1.gif'")
+    put_text("completed webio")
     Ganesh_data={}
     Dussehra_data={}
     Diwali_data={}
@@ -78,7 +80,7 @@ def main():
     GIF_PATH3 = info['event']+"/theme3.gif"
     GIF_PATH4 = info['event']+"/theme4.gif"
     GIF_PATH5 = info['event']+"/theme5.gif"
-
+    put_text("threads arenot working")
     t1 = Thread(target=GIF_Genrator, args=(GIF_PATH1,data,0,IMAGE_PATH,font_list,theme_list,info))
     t2 = Thread(target=GIF_Genrator, args=(GIF_PATH2,data,1,IMAGE_PATH,font_list,theme_list,info))
     t3 = Thread(target=GIF_Genrator, args=(GIF_PATH3,data,2,IMAGE_PATH,font_list,theme_list,info))
