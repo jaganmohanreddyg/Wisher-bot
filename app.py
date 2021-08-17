@@ -12,6 +12,7 @@ from flask import Flask
 app = Flask(__name__)
 
 def GIF_Genrator(GIF_PATH,data,themenum,IMAGE_PATH,font_list,theme_list,info):
+    put_text("generetor is running")
     gif = Image.open(GIF_PATH)
     image = Image.open(IMAGE_PATH).resize((280, 280)).convert("P")
     frames = [f.copy() for f in ImageSequence.Iterator(gif)]
